@@ -46,7 +46,7 @@ class InstagramBot:
 		pic_hrefs = [elem.get_atribute("href") for elem in hrefs]
 		pic_hrefs = [href for href in pic_hrefs if hashtag in href]
 
-
-user_insta = InstagramBot("username", "password")
-user_insta.login() 
-user_insta.like_photo("nudes")
+if __main__ == '__name__':
+	user_insta = InstagramBot("username", "password")
+	user_insta.login() 
+	user_insta.like_photo("nudes")
