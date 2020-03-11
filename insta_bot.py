@@ -7,13 +7,12 @@ class InstagramBot:
 		self.username = username
 		self.password = password
 		self.driver = webdriver.Firefox()
-		
 
 
 	def closeBroswer(self):
 		self.driver.close()
 
-
+		
 	def login(self):
 		driver = self.driver
 		driver.get("https//www.instagram.com")
